@@ -1,0 +1,108 @@
+body {
+    font-family: Calibri;
+    background-image: url('Background.png');
+    background-size: contain; /* Menyesuaikan ukuran gambar dengan ukuran viewport */
+    background-position: center; /* Menempatkan gambar di tengah */
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.konten {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin: 20px;
+}
+.konten div {
+    margin-bottom: 40px;
+}
+
+hr{
+    height: 2px;
+    width: 20%;
+    background-color: black;
+    border: none;
+    margin: 0 auto;
+}
+
+.kegiatan-row {
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 1);
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none; 
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: none; 
+}
+.kegiatan-row::-webkit-scrollbar {
+    display: none; 
+}
+.kegitan-row-konten {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle; /* Align elements vertically */
+}
+.kegitan-row-konten h4,p {
+    margin-top: 10px;
+}
+.kegitan-row-konten img{
+    width: 550px;
+    height: 300px;
+    border-radius: 30px;
+    margin: 15px;
+    object-fit: cover;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Adjust the shadow properties as needed */
+}
+#konten-next {
+    width: 300px;
+    margin: 10px;
+    align-content: center;
+}
+#konten-next img {
+    width:auto;
+    height: auto;
+    margin: -500px auto 0;
+}
+#bottom-image {
+    height: 700px; /* Adjust the height as needed */
+    background-image: url('Backgroundbot.png'); /* URL of your bottom image */
+    object-fit: cover;
+    opacity: 0.7;
+}
+footer {
+    background-color: #233B28;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    height: 300px;
+}
+
+.footer-konten {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.footer-konten b {
+    color: #FFB803;
+}
+.footer-konten p {
+    text-align: justify;
+}
+
+.footer-konten-row {
+    display: flex; /* Use Flexbox for the row */
+    justify-content: space-around; /* Distribute space evenly */
+    align-items: center; /* Align items vertically */
+    height: 100%; /* Make the row take the full height of the footer */
+}
+
+.footer-konten-tentang-web,
+.footer-konten-kegiatan,
+.footer-konten-program,
+.footer-konten-tentang-kami {
+    flex: 1; /* Allow each column to grow equally */
+    padding: 0 10px; /* Add padding for spacing */
+}
